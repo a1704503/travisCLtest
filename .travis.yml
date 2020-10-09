@@ -3,7 +3,6 @@ python:
   - "3.6"      # current default Python on Travis CI
 
 install:
-  - pip install -r requirements.txt
   - pip install -editable
 
 # command to run tests
