@@ -3,9 +3,8 @@ python:
   - "3.6"      # current default Python on Travis CI
 
 install:
-  - pip install -editable
+  - pip3 install
 
 # command to run tests
 script:
-  - test_events_by_date.py
-  - test_helsinki_api_integration.py
+  - pytest
