@@ -8,7 +8,7 @@ install:
 
 # command to run tests
 script:
-  - pytest test_events_by_date.py
-  - pytest test_helsinki_api_integration.py
+  - pytest test_events_by_date
+  - pytest test_helsinki_api_integration
   - coverage run -m --source=. test_events_by_date
   - coverage report
