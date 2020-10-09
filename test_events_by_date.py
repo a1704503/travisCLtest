@@ -81,11 +81,11 @@ def test_str_to_datetime_returns_correct_time_in_winter():
 
 
 def test_get_sorted_events_with_mock(mocker):
-    # alustus on nyt vähän pidempi:
+    # alustus on nyt vahan pidempi:
     my_events = [CHRISTMAS_EVENT, JANUARY_1ST_EVENT, UNKNOWN_EVENT]
     mocker.patch('events_by_date.get_events', return_value=my_events)
 
-    # testattava kutsu (tällä on riippuvuus mockattuun funktioon)
+    # testattava kutsu (talla on riippuvuus mockattuun funktioon)
     response_list = get_sorted_events()
 
     # assertoidaan tulos:

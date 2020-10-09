@@ -2,7 +2,7 @@ from events_by_date import get_sorted_events
 
 
 def test_get_sorted_events():
-    # testattava kutsu (tällä tehdään oikea pyyntö REST-apiin)
+    # testattava kutsu (talla tehdaan oikea pyynto REST-apiin)
     events = get_sorted_events()
 
     # assertoidaan tulos:

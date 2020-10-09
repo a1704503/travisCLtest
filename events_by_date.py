@@ -19,7 +19,7 @@ def swap(elements, i, j):
 
 def get_start_time(event):
     """ Palauttaa annetun tapahtuman aloitusajan merkkijonona, 
-    tai tyhjän merkkijonon, jos tapahtumalla ei ole  aloitusaikaa.
+    tai tyhjan merkkijonon, jos tapahtumalla ei ole  aloitusaikaa.
 
     >>> tapahtuma = { 'event_dates': { 'starting_day': '2022-01-01T12:00:00Z' }}
     >>> get_start_time(tapahtuma)
@@ -39,7 +39,7 @@ def str_to_datetime(date_str):
 
 def get_name(event):
     """ Palauttaa annetun tapahtuman nimen suomeksi, englanniksi tai
-    tyhjänä, jos kumpaakaan kieliversiota ei löydy.
+    tyhjana, jos kumpaakaan kieliversiota ei loydy.
 
     >>> tapahtuma = { 'name': { 'fi' : None, 'en': 'Christmas' }}
     >>> get_name(tapahtuma)
@@ -52,7 +52,7 @@ def get_name(event):
 
 
 def bubble_sort(events):
-    """ Järjestää annetut tapahtumat alkuajan mukaan.
+    """ Jarjestaa annetut tapahtumat alkuajan mukaan.
 
     >>> joulukuu24 = { 'event_dates': { 'starting_day': '2022-12-24T12:00:00Z' }}
     >>> tammikuu1 = { 'event_dates': { 'starting_day': '2022-01-01T12:00:00Z' }}
