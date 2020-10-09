@@ -7,4 +7,5 @@ install:
 
 # command to run tests
 script:
-  - pytest
+  - test_events_by_date.py
+  - test_helsinki_api_integration.py
